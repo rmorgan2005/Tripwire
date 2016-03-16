@@ -1,0 +1,20 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>Tripwire</Name>
+  <AddInID>{e893b222-f9e6-4153-b025-41638ad36563}</AddInID>
+  <Description>GPS Tools</Description>
+  <Version>1.0</Version>
+  <Image>Images\TripwireAddin.png</Image>
+  <Author>Josh Bates</Author>
+  <Company>NiSource</Company>
+  <Date>3/2/2016</Date>
+  <Targets>
+    <Target name="Desktop" version="10.1" />
+  </Targets>
+  <AddIn language="CLR4.0" library="TripwireAddin.dll" namespace="TripwireAddin">
+    <ArcMap>
+      <Commands>
+        <Button id="NiSource_TripwireAddin_btnTripwire" class="btnTripwire" message="Add-in command to select GPS Points with various criteria" caption="GPS Point Selector" tip="GPS Point Selector" category="GPS Tools" image="Images\tripwire_small.png" />
+      </Commands>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>
